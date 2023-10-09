@@ -1,0 +1,53 @@
+body {
+    background-color: #203447;
+    color: #ffc600;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3f3f3f;
+    text-align: center;
+    font-size: 1em;
+  }
+
+.currentWord{
+    font-size: 7em;
+    font-weight: bold;
+    line-height: 1em !important;
+}
+
+.otherWord1{
+    font-size: 4em;
+    opacity: 0.8;
+}
+
+.otherWord2{
+    font-size: 3em;
+    opacity: 0.6;
+}
+
+.otherWord3{
+    font-size: 2em;
+    opacity: 0.4;
+}
+
+#words{
+    line-height: 2em;
+}

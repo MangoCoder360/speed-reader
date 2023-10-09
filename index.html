@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Reader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div style="display: block;" id="inputMode">
+        <h1>Speed Reader</h1>
+        <h2>Instructions:</h2>
+        <h3>Enter text, select speed, and click start reading. Hold space to read. Shift to rewind.</h3>
+        <h2>Enter the text you want to read:</h2>
+        <textarea id="inputText" rows="10" cols="50">The Intel Xeon X5675 is a processor from the Westmere-EP family and was released in 2010. It is a six-core processor with a base clock speed of 3.06 GHz. It also supports Hyper-Threading, allowing it to handle up to 12 threads simultaneously. The X5675 is designed for use in servers and workstations.</textarea>
+        <br>
+        <button onclick="startReading()">Start Reading</button><br><br>
+        <h3>Select Reading Speed:</h3>
+        <input onchange="wpmDisplay();" type="range" min="50" max="1000" step="50" value="200" id="wpmSlider"><br>
+        <h3 id="speedDisplay">200 WPM</h3>
+    </div>
+    <div style="display: none;" id="readingMode">
+        <div id="words">
+            <p class="otherWord3" id="prev3">Previous Word 3</p>
+            <p class="otherWord2" id="prev2">Previous Word 2</p>
+            <p class="otherWord1" id="prev1">Previous Word 1</p>
+            <p class="currentWord" id="currentWord">Current Word</p>
+            <p class="otherWord1" id="next1">Next Word 1</p>
+            <p class="otherWord2" id="next2">Next Word 2</p>
+            <p class="otherWord3" id="next3">Next Word 3</p>
+        </div>
+        <br><br>
+        <button onclick="returnToInput()">Edit Text or Speed</button>
+    </div>
+</body>
+<footer>
+    <p>Rapid Serial Visual Presentation Tool</p>
+    <p>&copy; 2023 Reuben Schiopu</p>
+</footer>
+</html>
