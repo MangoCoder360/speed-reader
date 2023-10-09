@@ -49,5 +49,9 @@ footer {
 }
 
 #words{
-    line-height: 2em;
+    line-height: 1.5em;
+}
+
+.bottomOfPage{
+    padding-bottom: 50px;
 }
